@@ -1,0 +1,2180 @@
+<html>
+  <head>
+    <style data-rc-order="prepend" rc-util-key="@ant-design-icons">
+      .anticon {
+        display: inline-block;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .anticon>* {
+        line-height: 1;
+      }
+
+      .anticon svg {
+        display: inline-block;
+      }
+
+      .anticon::before {
+        display: none;
+      }
+
+      .anticon .anticon-icon {
+        display: block;
+      }
+
+      .anticon[tabindex] {
+        cursor: pointer;
+      }
+
+      .anticon-spin::before,
+      .anticon-spin {
+        display: inline-block;
+        -webkit-animation: loadingCircle 1s infinite linear;
+        animation: loadingCircle 1s infinite linear;
+      }
+
+      @-webkit-keyframes loadingCircle {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes loadingCircle {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="2uz6p3" data-token-hash="9fg1ze">
+      :where(.css-nllxry) a {
+        color: #1677ff;
+        text-decoration: none;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        transition: color 0.3s;
+        -webkit-text-decoration-skip: objects;
+      }
+
+      :where(.css-nllxry) a:hover {
+        color: #69b1ff;
+      }
+
+      :where(.css-nllxry) a:active {
+        color: #0958d9;
+      }
+
+      :where(.css-nllxry) a:active,
+      :where(.css-nllxry) a:hover {
+        text-decoration: none;
+        outline: 0;
+      }
+
+      :where(.css-nllxry) a:focus {
+        text-decoration: none;
+        outline: 0;
+      }
+
+      :where(.css-nllxry) a[disabled] {
+        color: rgba(0, 0, 0, 0.25);
+        cursor: not-allowed;
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="175dxif" data-token-hash="9fg1ze">
+      :where(.css-nllxry).ant-tooltip {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        position: absolute;
+        z-index: 1070;
+        display: block;
+        width: max-content;
+        max-width: 250px;
+        visibility: visible;
+        transform-origin: var(--arrow-x, 50%) var(--arrow-y, 50%);
+        --antd-arrow-background-color: rgba(0, 0, 0, 0.85);
+      }
+
+      :where(.css-nllxry).ant-tooltip-hidden {
+        display: none;
+      }
+
+      :where(.css-nllxry).ant-tooltip .ant-tooltip-inner {
+        min-width: 32px;
+        min-height: 32px;
+        padding: 6px 8px;
+        color: #fff;
+        text-align: start;
+        text-decoration: none;
+        word-wrap: break-word;
+        background-color: rgba(0, 0, 0, 0.85);
+        border-radius: 6px;
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-left .ant-tooltip-inner,
+      :where(.css-nllxry).ant-tooltip-placement-leftTop .ant-tooltip-inner,
+      :where(.css-nllxry).ant-tooltip-placement-leftBottom .ant-tooltip-inner,
+      :where(.css-nllxry).ant-tooltip-placement-right .ant-tooltip-inner,
+      :where(.css-nllxry).ant-tooltip-placement-rightTop .ant-tooltip-inner,
+      :where(.css-nllxry).ant-tooltip-placement-rightBottom .ant-tooltip-inner {
+        border-radius: 6px;
+      }
+
+      :where(.css-nllxry).ant-tooltip .ant-tooltip-content {
+        position: relative;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-blue .ant-tooltip-inner {
+        background-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-blue .ant-tooltip-arrow {
+        --antd-arrow-background-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-purple .ant-tooltip-inner {
+        background-color: #722ed1;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-purple .ant-tooltip-arrow {
+        --antd-arrow-background-color: #722ed1;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-cyan .ant-tooltip-inner {
+        background-color: #13c2c2;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-cyan .ant-tooltip-arrow {
+        --antd-arrow-background-color: #13c2c2;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-green .ant-tooltip-inner {
+        background-color: #52c41a;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-green .ant-tooltip-arrow {
+        --antd-arrow-background-color: #52c41a;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-magenta .ant-tooltip-inner {
+        background-color: #eb2f96;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-magenta .ant-tooltip-arrow {
+        --antd-arrow-background-color: #eb2f96;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-pink .ant-tooltip-inner {
+        background-color: #eb2f96;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-pink .ant-tooltip-arrow {
+        --antd-arrow-background-color: #eb2f96;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-red .ant-tooltip-inner {
+        background-color: #f5222d;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-red .ant-tooltip-arrow {
+        --antd-arrow-background-color: #f5222d;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-orange .ant-tooltip-inner {
+        background-color: #fa8c16;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-orange .ant-tooltip-arrow {
+        --antd-arrow-background-color: #fa8c16;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-yellow .ant-tooltip-inner {
+        background-color: #fadb14;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-yellow .ant-tooltip-arrow {
+        --antd-arrow-background-color: #fadb14;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-volcano .ant-tooltip-inner {
+        background-color: #fa541c;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-volcano .ant-tooltip-arrow {
+        --antd-arrow-background-color: #fa541c;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-geekblue .ant-tooltip-inner {
+        background-color: #2f54eb;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-geekblue .ant-tooltip-arrow {
+        --antd-arrow-background-color: #2f54eb;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-lime .ant-tooltip-inner {
+        background-color: #a0d911;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-lime .ant-tooltip-arrow {
+        --antd-arrow-background-color: #a0d911;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-gold .ant-tooltip-inner {
+        background-color: #faad14;
+      }
+
+      :where(.css-nllxry).ant-tooltip.ant-tooltip-gold .ant-tooltip-arrow {
+        --antd-arrow-background-color: #faad14;
+      }
+
+      :where(.css-nllxry).ant-tooltip-rtl {
+        direction: rtl;
+      }
+
+      :where(.css-nllxry).ant-tooltip .ant-tooltip-arrow {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        pointer-events: none;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+      }
+
+      :where(.css-nllxry).ant-tooltip .ant-tooltip-arrow::before {
+        position: absolute;
+        bottom: 0;
+        inset-inline-start: 0;
+        width: 16px;
+        height: 8px;
+        background: var(--antd-arrow-background-color);
+        clip-path: polygon(1.6568542494923806px 100%, 50% 1.6568542494923806px, 14.34314575050762px 100%, 1.6568542494923806px 100%);
+        clip-path: path('M 0 8 A 4 4 0 0 0 2.82842712474619 6.82842712474619 L 6.585786437626905 3.0710678118654755 A 2 2 0 0 1 9.414213562373096 3.0710678118654755 L 13.17157287525381 6.82842712474619 A 4 4 0 0 0 16 8 Z');
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-tooltip .ant-tooltip-arrow::after {
+        content: "";
+        position: absolute;
+        width: 8.970562748477143px;
+        height: 8.970562748477143px;
+        bottom: 0;
+        inset-inline: 0;
+        margin: auto;
+        border-radius: 0 0 2px 0;
+        transform: translateY(50%) rotate(-135deg);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+        z-index: 0;
+        background: transparent;
+      }
+
+      :where(.css-nllxry).ant-tooltip .ant-tooltip-arrow:before {
+        background: var(--antd-arrow-background-color);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-top .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-topLeft .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-topRight .ant-tooltip-arrow {
+        bottom: 0;
+        transform: translateY(100%) rotate(180deg);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-top .ant-tooltip-arrow {
+        left: 50%;
+        transform: translateX(-50%) translateY(100%) rotate(180deg);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-topLeft .ant-tooltip-arrow {
+        left: 12px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-topRight .ant-tooltip-arrow {
+        right: 12px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-bottom .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+        top: 0;
+        transform: translateY(-100%);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-bottom .ant-tooltip-arrow {
+        left: 50%;
+        transform: translateX(-50%) translateY(-100%);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-bottomLeft .ant-tooltip-arrow {
+        left: 12px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
+        right: 12px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-left .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-leftTop .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-leftBottom .ant-tooltip-arrow {
+        right: 0;
+        transform: translateX(100%) rotate(90deg);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-left .ant-tooltip-arrow {
+        top: 50%;
+        transform: translateY(-50%) translateX(100%) rotate(90deg);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-leftTop .ant-tooltip-arrow {
+        top: 8px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-leftBottom .ant-tooltip-arrow {
+        bottom: 8px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-right .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-rightTop .ant-tooltip-arrow,
+      :where(.css-nllxry).ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
+        left: 0;
+        transform: translateX(-100%) rotate(-90deg);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-right .ant-tooltip-arrow {
+        top: 50%;
+        transform: translateY(-50%) translateX(-100%) rotate(-90deg);
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-rightTop .ant-tooltip-arrow {
+        top: 8px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
+        bottom: 8px;
+      }
+
+      :where(.css-nllxry).ant-tooltip-pure {
+        position: relative;
+        max-width: none;
+        margin: 16px;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-enter,
+      :where(.css-nllxry).ant-zoom-big-fast-appear {
+        animation-duration: 0.1s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-leave {
+        animation-duration: 0.1s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-enter.ant-zoom-big-fast-enter-active,
+      :where(.css-nllxry).ant-zoom-big-fast-appear.ant-zoom-big-fast-appear-active {
+        animation-name: css-nllxry-antZoomBigIn;
+        animation-play-state: running;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-leave.ant-zoom-big-fast-leave-active {
+        animation-name: css-nllxry-antZoomBigOut;
+        animation-play-state: running;
+        pointer-events: none;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-enter,
+      :where(.css-nllxry).ant-zoom-big-fast-appear {
+        transform: scale(0);
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-enter-prepare,
+      :where(.css-nllxry).ant-zoom-big-fast-appear-prepare {
+        transform: none;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-fast-leave {
+        animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-nllxry-antZoomBigIn">
+      @keyframes css-nllxry-antZoomBigIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-nllxry-antZoomBigOut">
+      @keyframes css-nllxry-antZoomBigOut {
+        0% {
+          transform: scale(1);
+        }
+
+        100% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="rn5ulq" data-token-hash="9fg1ze">
+      :where(.css-nllxry)[class^="ant-menu"],
+      :where(.css-nllxry)[class*=" ant-menu"] {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+
+      :where(.css-nllxry)[class^="ant-menu"]::before,
+      :where(.css-nllxry)[class*=" ant-menu"]::before,
+      :where(.css-nllxry)[class^="ant-menu"]::after,
+      :where(.css-nllxry)[class*=" ant-menu"]::after {
+        box-sizing: border-box;
+      }
+
+      :where(.css-nllxry)[class^="ant-menu"] [class^="ant-menu"],
+      :where(.css-nllxry)[class*=" ant-menu"] [class^="ant-menu"],
+      :where(.css-nllxry)[class^="ant-menu"] [class*=" ant-menu"],
+      :where(.css-nllxry)[class*=" ant-menu"] [class*=" ant-menu"] {
+        box-sizing: border-box;
+      }
+
+      :where(.css-nllxry)[class^="ant-menu"] [class^="ant-menu"]::before,
+      :where(.css-nllxry)[class*=" ant-menu"] [class^="ant-menu"]::before,
+      :where(.css-nllxry)[class^="ant-menu"] [class*=" ant-menu"]::before,
+      :where(.css-nllxry)[class*=" ant-menu"] [class*=" ant-menu"]::before,
+      :where(.css-nllxry)[class^="ant-menu"] [class^="ant-menu"]::after,
+      :where(.css-nllxry)[class*=" ant-menu"] [class^="ant-menu"]::after,
+      :where(.css-nllxry)[class^="ant-menu"] [class*=" ant-menu"]::after,
+      :where(.css-nllxry)[class*=" ant-menu"] [class*=" ant-menu"]::after {
+        box-sizing: border-box;
+      }
+
+      :where(.css-nllxry) .ant-menu::before {
+        display: table;
+        content: "";
+      }
+
+      :where(.css-nllxry) .ant-menu::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+
+      :where(.css-nllxry) .ant-menu-hidden {
+        display: none;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-hidden {
+        display: none;
+      }
+
+      :where(.css-nllxry).ant-menu {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 0;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        margin-bottom: 0;
+        padding-inline-start: 0;
+        outline: none;
+        transition: width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+      }
+
+      :where(.css-nllxry).ant-menu::before {
+        display: table;
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu ul,
+      :where(.css-nllxry).ant-menu ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      :where(.css-nllxry).ant-menu-overflow {
+        display: flex;
+      }
+
+      :where(.css-nllxry).ant-menu-overflow .ant-menu-item {
+        flex: none;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title {
+        border-radius: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-group-title {
+        padding: 8px 16px;
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        transition: all 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal .ant-menu-submenu {
+        transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-inline {
+        transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu .ant-menu-sub {
+        cursor: initial;
+        transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-title-content {
+        transition: color 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-title-content>.ant-typography-ellipsis-single-line {
+        display: inline;
+        vertical-align: unset;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item a::before {
+        position: absolute;
+        inset: 0;
+        background-color: transparent;
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-divider {
+        overflow: hidden;
+        line-height: 0;
+        border-color: rgba(5, 5, 5, 0.06);
+        border-style: solid;
+        border-width: 0;
+        border-top-width: 1px;
+        margin-block: 1px;
+        padding: 0;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-divider-dashed {
+        border-style: dashed;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title {
+        position: relative;
+        display: block;
+        margin: 0;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: border-color 0.3s, background 0.3s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu .ant-menu-item .anticon,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .anticon {
+        min-width: 14px;
+        font-size: 14px;
+        transition: font-size 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu .ant-menu-item .anticon+span,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .anticon+span {
+        margin-inline-start: 10px;
+        opacity: 1;
+        transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), margin 0.3s, color 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .ant-menu-item-icon {
+        display: inline-flex;
+        align-items: center;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item .ant-menu-item-icon>*,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .ant-menu-item-icon>* {
+        line-height: 1;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item .ant-menu-item-icon svg,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title .ant-menu-item-icon svg {
+        display: inline-block;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item.ant-menu-item-only-child>.anticon,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title.ant-menu-item-only-child>.anticon,
+      :where(.css-nllxry).ant-menu .ant-menu-item.ant-menu-item-only-child>.ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-title.ant-menu-item-only-child>.ant-menu-item-icon {
+        margin-inline-end: 0;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-disabled,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-disabled {
+        background: none !important;
+        cursor: not-allowed;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-disabled::after,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-disabled::after {
+        border-color: transparent !important;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-disabled a,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-disabled a {
+        color: inherit !important;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-disabled>.ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-disabled>.ant-menu-submenu-title {
+        color: inherit !important;
+        cursor: not-allowed;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-group .ant-menu-item-group-list {
+        margin: 0;
+        padding: 0;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-item-group .ant-menu-item-group-list .ant-menu-item,
+      :where(.css-nllxry).ant-menu .ant-menu-item-group .ant-menu-item-group-list .ant-menu-submenu-title {
+        padding-inline: 28px 16px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup {
+        position: absolute;
+        z-index: 1050;
+        border-radius: 8px;
+        box-shadow: none;
+        transform-origin: 0 0;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup.ant-menu-submenu {
+        background: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup::before {
+        position: absolute;
+        inset: -7px 0 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-rightTop::before {
+        top: 0;
+        inset-inline-start: -7px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-leftTop,
+      :where(.css-nllxry).ant-menu-submenu-placement-bottomRight,
+      :where(.css-nllxry).ant-menu-submenu {
+        transform-origin: 100% 0;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-leftBottom,
+      :where(.css-nllxry).ant-menu-submenu-placement-topRight,
+      :where(.css-nllxry).ant-menu-submenu {
+        transform-origin: 100% 100%;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-rightBottom,
+      :where(.css-nllxry).ant-menu-submenu-placement-topLeft,
+      :where(.css-nllxry).ant-menu-submenu {
+        transform-origin: 0 100%;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-bottomLeft,
+      :where(.css-nllxry).ant-menu-submenu-placement-rightTop,
+      :where(.css-nllxry).ant-menu-submenu {
+        transform-origin: 0 0;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-leftTop,
+      :where(.css-nllxry).ant-menu-submenu-placement-leftBottom {
+        padding-inline-end: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-rightTop,
+      :where(.css-nllxry).ant-menu-submenu-placement-rightBottom {
+        padding-inline-start: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-topRight,
+      :where(.css-nllxry).ant-menu-submenu-placement-topLeft {
+        padding-bottom: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-placement-bottomRight,
+      :where(.css-nllxry).ant-menu-submenu-placement-bottomLeft {
+        padding-top: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu {
+        border-radius: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title {
+        position: relative;
+        display: block;
+        margin: 0;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: border-color 0.3s, background 0.3s, padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .anticon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .anticon {
+        min-width: 14px;
+        font-size: 14px;
+        transition: font-size 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .anticon+span,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .anticon+span {
+        margin-inline-start: 10px;
+        opacity: 1;
+        transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), margin 0.3s, color 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .ant-menu-item-icon {
+        display: inline-flex;
+        align-items: center;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .ant-menu-item-icon>*,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .ant-menu-item-icon>* {
+        line-height: 1;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item .ant-menu-item-icon svg,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title .ant-menu-item-icon svg {
+        display: inline-block;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item.ant-menu-item-only-child>.anticon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title.ant-menu-item-only-child>.anticon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item.ant-menu-item-only-child>.ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title.ant-menu-item-only-child>.ant-menu-item-icon {
+        margin-inline-end: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item-disabled,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-disabled {
+        background: none !important;
+        cursor: not-allowed;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item-disabled::after,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-disabled::after {
+        border-color: transparent !important;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item-disabled a,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-disabled a {
+        color: inherit !important;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item-disabled>.ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-disabled>.ant-menu-submenu-title {
+        color: inherit !important;
+        cursor: not-allowed;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-expand-icon,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-arrow {
+        position: absolute;
+        top: 50%;
+        inset-inline-end: 16px;
+        width: 10px;
+        color: currentcolor;
+        transform: translateY(-50%);
+        transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-arrow::before,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-arrow::after {
+        position: absolute;
+        width: 6px;
+        height: 1.5px;
+        background-color: currentcolor;
+        border-radius: 6px;
+        transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-arrow::before {
+        transform: rotate(45deg) translateY(-2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-arrow::after {
+        transform: rotate(-45deg) translateY(2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-item,
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu>.ant-menu-submenu-title {
+        border-radius: 4px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu>.ant-menu .ant-menu-submenu-title::after {
+        transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-expand-icon,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-arrow {
+        position: absolute;
+        top: 50%;
+        inset-inline-end: 16px;
+        width: 10px;
+        color: currentcolor;
+        transform: translateY(-50%);
+        transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-arrow::before,
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-arrow::after {
+        position: absolute;
+        width: 6px;
+        height: 1.5px;
+        background-color: currentcolor;
+        border-radius: 6px;
+        transition: background 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-arrow::before {
+        transform: rotate(45deg) translateY(-2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-arrow::after {
+        transform: rotate(-45deg) translateY(2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed .ant-menu-submenu-arrow::before,
+      :where(.css-nllxry).ant-menu-inline .ant-menu-submenu-arrow::before {
+        transform: rotate(-45deg) translateX(2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed .ant-menu-submenu-arrow::after,
+      :where(.css-nllxry).ant-menu-inline .ant-menu-submenu-arrow::after {
+        transform: rotate(45deg) translateX(-2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-open.ant-menu-submenu-inline>.ant-menu-submenu-title>.ant-menu-submenu-arrow {
+        transform: translateY(-2px);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-open.ant-menu-submenu-inline>.ant-menu-submenu-title>.ant-menu-submenu-arrow::after {
+        transform: rotate(-45deg) translateX(-2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-menu-submenu-open.ant-menu-submenu-inline>.ant-menu-submenu-title>.ant-menu-submenu-arrow::before {
+        transform: rotate(45deg) translateX(2.5px);
+      }
+
+      :where(.css-nllxry).ant-layout-header .ant-menu {
+        line-height: inherit;
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal {
+        line-height: 46px;
+        border: 0;
+        border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+        box-shadow: none;
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal::after {
+        display: block;
+        clear: both;
+        height: 0;
+        content: "\20";
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal .ant-menu-item,
+      :where(.css-nllxry).ant-menu-horizontal .ant-menu-submenu {
+        position: relative;
+        display: inline-block;
+        vertical-align: bottom;
+        padding-inline: 16px;
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal>.ant-menu-item:hover,
+      :where(.css-nllxry).ant-menu-horizontal>.ant-menu-item-active,
+      :where(.css-nllxry).ant-menu-horizontal>.ant-menu-submenu .ant-menu-submenu-title:hover {
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal .ant-menu-item,
+      :where(.css-nllxry).ant-menu-horizontal .ant-menu-submenu-title {
+        transition: border-color 0.3s, background 0.3s;
+      }
+
+      :where(.css-nllxry).ant-menu-horizontal .ant-menu-submenu-arrow {
+        display: none;
+      }
+
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root,
+      :where(.css-nllxry).ant-menu-vertical.ant-menu-root {
+        box-shadow: none;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-item,
+      :where(.css-nllxry).ant-menu-vertical .ant-menu-item {
+        position: relative;
+        overflow: hidden;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-item,
+      :where(.css-nllxry).ant-menu-vertical .ant-menu-item,
+      :where(.css-nllxry).ant-menu-inline .ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-vertical .ant-menu-submenu-title {
+        height: 40px;
+        line-height: 40px;
+        padding-inline: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-inline: 4px;
+        margin-block: 4px;
+        width: calc(100% - 8px);
+      }
+
+      :where(.css-nllxry).ant-menu-inline>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-vertical>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-vertical>.ant-menu-submenu>.ant-menu-submenu-title {
+        height: 40px;
+        line-height: 40px;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-item-group-list .ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-vertical .ant-menu-item-group-list .ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-inline .ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-vertical .ant-menu-submenu-title {
+        padding-inline-end: 34px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical {
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical .ant-menu-item {
+        position: relative;
+        overflow: hidden;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical .ant-menu-item,
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical .ant-menu-submenu-title {
+        height: 40px;
+        line-height: 40px;
+        padding-inline: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-inline: 4px;
+        margin-block: 4px;
+        width: calc(100% - 8px);
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical>.ant-menu-submenu>.ant-menu-submenu-title {
+        height: 40px;
+        line-height: 40px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical .ant-menu-item-group-list .ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical .ant-menu-submenu-title {
+        padding-inline-end: 34px;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub {
+        min-width: 160px;
+        max-height: calc(100vh - 100px);
+        padding: 0;
+        overflow: hidden;
+        border-inline-end: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub:not([class*='-active']) {
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      :where(.css-nllxry).ant-menu-inline {
+        width: 100%;
+      }
+
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root .ant-menu-item,
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root .ant-menu-submenu-title {
+        display: flex;
+        align-items: center;
+        transition: border-color 0.3s, background 0.3s, padding 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root .ant-menu-item>.ant-menu-title-content,
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root .ant-menu-submenu-title>.ant-menu-title-content {
+        flex: auto;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root .ant-menu-item>*,
+      :where(.css-nllxry).ant-menu-inline.ant-menu-root .ant-menu-submenu-title>* {
+        flex: none;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-sub.ant-menu-inline {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-sub.ant-menu-inline>.ant-menu-submenu>.ant-menu-submenu-title {
+        height: 40px;
+        line-height: 40px;
+        list-style-position: inside;
+        list-style-type: disc;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-sub.ant-menu-inline .ant-menu-item-group-title {
+        padding-inline-start: 32px;
+      }
+
+      :where(.css-nllxry).ant-menu-inline .ant-menu-item {
+        height: 40px;
+        line-height: 40px;
+        list-style-position: inside;
+        list-style-type: disc;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed {
+        width: 80px;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed.ant-menu-root .ant-menu-item>.ant-menu-inline-collapsed-noicon,
+      :where(.css-nllxry).ant-menu-inline-collapsed.ant-menu-root .ant-menu-submenu .ant-menu-submenu-title>.ant-menu-inline-collapsed-noicon {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title {
+        inset-inline-start: 0;
+        padding-inline: calc(50% - 8px - 4px);
+        text-overflow: clip;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item .ant-menu-submenu-arrow,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .ant-menu-submenu-arrow,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-submenu-arrow,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-submenu-arrow,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item .ant-menu-submenu-expand-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .ant-menu-submenu-expand-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-submenu-expand-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-submenu-expand-icon {
+        opacity: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item .anticon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .anticon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .anticon,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .anticon {
+        margin: 0;
+        font-size: 16px;
+        line-height: 40px;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .ant-menu-item-icon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item .anticon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .anticon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .anticon+span,
+      :where(.css-nllxry).ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .anticon+span {
+        display: inline-block;
+        opacity: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed .anticon {
+        display: inline-block;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed-tooltip {
+        pointer-events: none;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed-tooltip .ant-menu-item-icon,
+      :where(.css-nllxry).ant-menu-inline-collapsed-tooltip .anticon {
+        display: none;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed-tooltip a,
+      :where(.css-nllxry).ant-menu-inline-collapsed-tooltip a:hover {
+        color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-inline-collapsed .ant-menu-item-group-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-inline: 8px;
+      }
+
+      :where(.css-nllxry).ant-menu-light,
+      :where(.css-nllxry).ant-menu-light>.ant-menu {
+        color: rgba(0, 0, 0, 0.88);
+        background: #ffffff;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-root:focus-visible,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-root:focus-visible {
+        outline: 4px solid #91caff;
+        outline-offset: 1px;
+        transition: outline-offset 0s, outline 0s;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-group-title,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-group-title {
+        color: rgba(0, 0, 0, 0.45);
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-submenu-selected>.ant-menu-submenu-title {
+        color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-disabled,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-disabled,
+      :where(.css-nllxry).ant-menu-light .ant-menu-submenu-disabled,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-submenu-disabled {
+        color: rgba(0, 0, 0, 0.25) !important;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+      :where(.css-nllxry).ant-menu-light .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected)>.ant-menu-submenu-title:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected)>.ant-menu-submenu-title:hover {
+        color: rgba(0, 0, 0, 0.88);
+      }
+
+      :where(.css-nllxry).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover {
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+
+      :where(.css-nllxry).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active,
+      :where(.css-nllxry).ant-menu-light>.ant-menu:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {
+        background-color: #e6f4ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+
+      :where(.css-nllxry).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:active,
+      :where(.css-nllxry).ant-menu-light>.ant-menu:not(.ant-menu-horizontal) .ant-menu-submenu-title:active {
+        background-color: #e6f4ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-danger,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-danger {
+        color: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-danger.ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-danger.ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+        color: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-danger.ant-menu-item:active,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-danger.ant-menu-item:active {
+        background: #fff2f0;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item a,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item a,
+      :where(.css-nllxry).ant-menu-light .ant-menu-item a:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item a:hover {
+        color: inherit;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-selected {
+        color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-selected.ant-menu-item-danger,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-selected.ant-menu-item-danger {
+        color: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-selected a,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-selected a,
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-selected a:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-selected a:hover {
+        color: inherit;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-selected {
+        background-color: #e6f4ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item-selected.ant-menu-item-danger,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item-selected.ant-menu-item-danger {
+        background-color: #fff2f0;
+      }
+
+      :where(.css-nllxry).ant-menu-light .ant-menu-item:not(.ant-menu-item-disabled):focus-visible,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-item:not(.ant-menu-item-disabled):focus-visible,
+      :where(.css-nllxry).ant-menu-light .ant-menu-submenu-title:not(.ant-menu-item-disabled):focus-visible,
+      :where(.css-nllxry).ant-menu-light>.ant-menu .ant-menu-submenu-title:not(.ant-menu-item-disabled):focus-visible {
+        outline: 4px solid #91caff;
+        outline-offset: 1px;
+        transition: outline-offset 0s, outline 0s;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-submenu>.ant-menu,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-submenu>.ant-menu {
+        background-color: #ffffff;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-popup>.ant-menu,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-popup>.ant-menu {
+        background-color: #ffffff;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu {
+        top: 1px;
+        margin-top: -1px;
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu::after {
+        position: absolute;
+        inset-inline: 16px;
+        bottom: 0;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item:hover,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu:hover,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-active,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-active,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-active,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-active,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-open,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-open,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-open,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-open {
+        background: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item:hover::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-active::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-active::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-active::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-active::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-open::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-open::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-open::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-open::after {
+        border-bottom-width: 2px;
+        border-bottom-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected {
+        color: #1677ff;
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected:hover,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected:hover,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected:hover {
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected::after {
+        border-bottom-width: 2px;
+        border-bottom-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-root.ant-menu-inline,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-root.ant-menu-inline,
+      :where(.css-nllxry).ant-menu-light.ant-menu-root.ant-menu-vertical,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-root.ant-menu-vertical {
+        border-inline-end: 1px solid rgba(5, 5, 5, 0.06);
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+        background: rgba(0, 0, 0, 0.02);
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-inline .ant-menu-item,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-inline .ant-menu-item {
+        position: relative;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-inline .ant-menu-item::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-inline .ant-menu-item::after {
+        position: absolute;
+        inset-block: 0;
+        inset-inline-end: 0;
+        border-inline-end: 0px solid #1677ff;
+        transform: scaleY(0.0001);
+        opacity: 0;
+        transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-inline .ant-menu-item.ant-menu-item-danger::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-inline .ant-menu-item.ant-menu-item-danger::after {
+        border-inline-end-color: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-light.ant-menu-inline .ant-menu-selected::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-inline .ant-menu-selected::after,
+      :where(.css-nllxry).ant-menu-light.ant-menu-inline .ant-menu-item-selected::after,
+      :where(.css-nllxry).ant-menu-light>.ant-menu.ant-menu-inline .ant-menu-item-selected::after {
+        transform: scaleY(1);
+        opacity: 1;
+        transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu-dark,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu {
+        color: rgba(255, 255, 255, 0.65);
+        background: #001529;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-root:focus-visible,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-root:focus-visible {
+        outline: 4px solid #91caff;
+        outline-offset: 1px;
+        transition: outline-offset 0s, outline 0s;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-group-title,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-group-title {
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-submenu-selected>.ant-menu-submenu-title,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-submenu-selected>.ant-menu-submenu-title {
+        color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-disabled,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-disabled,
+      :where(.css-nllxry).ant-menu-dark .ant-menu-submenu-disabled,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-submenu-disabled {
+        color: rgba(255, 255, 255, 0.25) !important;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover,
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected)>.ant-menu-submenu-title:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected)>.ant-menu-submenu-title:hover {
+        color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover {
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active {
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover {
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-submenu-title:active,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu:not(.ant-menu-horizontal) .ant-menu-submenu-title:active {
+        background-color: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-danger,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-danger {
+        color: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-danger.ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-danger.ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+        color: #ff7875;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-danger.ant-menu-item:active,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-danger.ant-menu-item:active {
+        background: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item a,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item a,
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item a:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item a:hover {
+        color: inherit;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-selected {
+        color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-selected.ant-menu-item-danger,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-selected.ant-menu-item-danger {
+        color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-selected a,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-selected a,
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-selected a:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-selected a:hover {
+        color: inherit;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-selected {
+        background-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item-selected.ant-menu-item-danger,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item-selected.ant-menu-item-danger {
+        background-color: #ff4d4f;
+      }
+
+      :where(.css-nllxry).ant-menu-dark .ant-menu-item:not(.ant-menu-item-disabled):focus-visible,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-item:not(.ant-menu-item-disabled):focus-visible,
+      :where(.css-nllxry).ant-menu-dark .ant-menu-submenu-title:not(.ant-menu-item-disabled):focus-visible,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu .ant-menu-submenu-title:not(.ant-menu-item-disabled):focus-visible {
+        outline: 4px solid #91caff;
+        outline-offset: 1px;
+        transition: outline-offset 0s, outline 0s;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-submenu>.ant-menu,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-submenu>.ant-menu {
+        background-color: #000c17;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-popup>.ant-menu,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-popup>.ant-menu {
+        background-color: #001529;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal {
+        border-bottom: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu::after {
+        position: absolute;
+        inset-inline: 16px;
+        bottom: 0;
+        border-bottom: 0px solid transparent;
+        transition: border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item:hover,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu:hover,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-active,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-active,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-active,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-active,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-open,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-open,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-open,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-open {
+        background: transparent;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item:hover::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item:hover::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu:hover::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-active::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-active::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-active::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-active::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-open::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-open::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-open::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-open::after {
+        border-bottom-width: 0;
+        border-bottom-color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-selected,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected {
+        color: #fff;
+        background-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-selected:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected:hover,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-selected:hover,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected:hover {
+        background-color: #1677ff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-item-selected::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-item-selected::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-horizontal>.ant-menu-submenu-selected::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-horizontal>.ant-menu-submenu-selected::after {
+        border-bottom-width: 0;
+        border-bottom-color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-root.ant-menu-inline,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-root.ant-menu-inline,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-root.ant-menu-vertical,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-root.ant-menu-vertical {
+        border-inline-end: 0px solid rgba(5, 5, 5, 0.06);
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+        background: #000c17;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-inline .ant-menu-item,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-item {
+        position: relative;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-inline .ant-menu-item::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-item::after {
+        position: absolute;
+        inset-block: 0;
+        inset-inline-end: 0;
+        border-inline-end: 0px solid #fff;
+        transform: scaleY(0.0001);
+        opacity: 0;
+        transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        content: "";
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-inline .ant-menu-item.ant-menu-item-danger::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-item.ant-menu-item-danger::after {
+        border-inline-end-color: #fff;
+      }
+
+      :where(.css-nllxry).ant-menu-dark.ant-menu-inline .ant-menu-selected::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-selected::after,
+      :where(.css-nllxry).ant-menu-dark.ant-menu-inline .ant-menu-item-selected::after,
+      :where(.css-nllxry).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-item-selected::after {
+        transform: scaleY(1);
+        opacity: 1;
+        transition: transform 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+
+      :where(.css-nllxry).ant-menu-rtl {
+        direction: rtl;
+      }
+
+      :where(.css-nllxry).ant-menu-submenu-rtl {
+        transform-origin: 100% 0;
+      }
+
+      :where(.css-nllxry).ant-menu-rtl.ant-menu-vertical .ant-menu-submenu-arrow::before,
+      :where(.css-nllxry).ant-menu-submenu-rtl .ant-menu-vertical .ant-menu-submenu-arrow::before {
+        transform: rotate(-45deg) translateY(-2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu-rtl.ant-menu-vertical .ant-menu-submenu-arrow::after,
+      :where(.css-nllxry).ant-menu-submenu-rtl .ant-menu-vertical .ant-menu-submenu-arrow::after {
+        transform: rotate(45deg) translateY(2.5px);
+      }
+
+      :where(.css-nllxry).ant-menu .ant-motion-collapse-legacy {
+        overflow: hidden;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-motion-collapse-legacy-active {
+        transition: height 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+      }
+
+      :where(.css-nllxry).ant-menu .ant-motion-collapse {
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+      }
+
+      :where(.css-nllxry).ant-slide-up-enter,
+      :where(.css-nllxry).ant-slide-up-appear {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-slide-up-leave {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-slide-up-enter.ant-slide-up-enter-active,
+      :where(.css-nllxry).ant-slide-up-appear.ant-slide-up-appear-active {
+        animation-name: css-nllxry-antSlideUpIn;
+        animation-play-state: running;
+      }
+
+      :where(.css-nllxry).ant-slide-up-leave.ant-slide-up-leave-active {
+        animation-name: css-nllxry-antSlideUpOut;
+        animation-play-state: running;
+        pointer-events: none;
+      }
+
+      :where(.css-nllxry).ant-slide-up-enter,
+      :where(.css-nllxry).ant-slide-up-appear {
+        transform: scale(0);
+        transform-origin: 0% 0%;
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      :where(.css-nllxry).ant-slide-up-enter-prepare,
+      :where(.css-nllxry).ant-slide-up-appear-prepare {
+        transform: scale(1);
+      }
+
+      :where(.css-nllxry).ant-slide-up-leave {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      }
+
+      :where(.css-nllxry).ant-slide-down-enter,
+      :where(.css-nllxry).ant-slide-down-appear {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-slide-down-leave {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-slide-down-enter.ant-slide-down-enter-active,
+      :where(.css-nllxry).ant-slide-down-appear.ant-slide-down-appear-active {
+        animation-name: css-nllxry-antSlideDownIn;
+        animation-play-state: running;
+      }
+
+      :where(.css-nllxry).ant-slide-down-leave.ant-slide-down-leave-active {
+        animation-name: css-nllxry-antSlideDownOut;
+        animation-play-state: running;
+        pointer-events: none;
+      }
+
+      :where(.css-nllxry).ant-slide-down-enter,
+      :where(.css-nllxry).ant-slide-down-appear {
+        transform: scale(0);
+        transform-origin: 0% 0%;
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      :where(.css-nllxry).ant-slide-down-enter-prepare,
+      :where(.css-nllxry).ant-slide-down-appear-prepare {
+        transform: scale(1);
+      }
+
+      :where(.css-nllxry).ant-slide-down-leave {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      }
+
+      :where(.css-nllxry).ant-zoom-big-enter,
+      :where(.css-nllxry).ant-zoom-big-appear {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-leave {
+        animation-duration: 0.2s;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-enter.ant-zoom-big-enter-active,
+      :where(.css-nllxry).ant-zoom-big-appear.ant-zoom-big-appear-active {
+        animation-name: css-nllxry-antZoomBigIn;
+        animation-play-state: running;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-leave.ant-zoom-big-leave-active {
+        animation-name: css-nllxry-antZoomBigOut;
+        animation-play-state: running;
+        pointer-events: none;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-enter,
+      :where(.css-nllxry).ant-zoom-big-appear {
+        transform: scale(0);
+        opacity: 0;
+        animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+      }
+
+      :where(.css-nllxry).ant-zoom-big-enter-prepare,
+      :where(.css-nllxry).ant-zoom-big-appear-prepare {
+        transform: none;
+      }
+
+      :where(.css-nllxry).ant-zoom-big-leave {
+        animation-timing-function: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-nllxry-antSlideUpIn">
+      @keyframes css-nllxry-antSlideUpIn {
+        0% {
+          transform: scaleY(0.8);
+          transform-origin: 0% 0%;
+          opacity: 0;
+        }
+
+        100% {
+          transform: scaleY(1);
+          transform-origin: 0% 0%;
+          opacity: 1;
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-nllxry-antSlideUpOut">
+      @keyframes css-nllxry-antSlideUpOut {
+        0% {
+          transform: scaleY(1);
+          transform-origin: 0% 0%;
+          opacity: 1;
+        }
+
+        100% {
+          transform: scaleY(0.8);
+          transform-origin: 0% 0%;
+          opacity: 0;
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-nllxry-antSlideDownIn">
+      @keyframes css-nllxry-antSlideDownIn {
+        0% {
+          transform: scaleY(0.8);
+          transform-origin: 100% 100%;
+          opacity: 0;
+        }
+
+        100% {
+          transform: scaleY(1);
+          transform-origin: 100% 100%;
+          opacity: 1;
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="_effect-css-nllxry-antSlideDownOut">
+      @keyframes css-nllxry-antSlideDownOut {
+        0% {
+          transform: scaleY(1);
+          transform-origin: 100% 100%;
+          opacity: 1;
+        }
+
+        100% {
+          transform: scaleY(0.8);
+          transform-origin: 100% 100%;
+          opacity: 0;
+        }
+      }
+    </style>
+    <style data-rc-order="prependQueue" data-css-hash="87n3gt" data-token-hash="9fg1ze">
+      .anticon {
+        display: inline-flex;
+        align-items: center;
+        color: inherit;
+        font-style: normal;
+        line-height: 0;
+        text-align: center;
+        text-transform: none;
+        vertical-align: -0.125em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .anticon>* {
+        line-height: 1;
+      }
+
+      .anticon svg {
+        display: inline-block;
+      }
+
+      .anticon .anticon .anticon-icon {
+        display: block;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Blockchain, Manta Network, Manta Pacific, Modular blockchain, Zero-knowledge, ZK, Zero-knowledge applications, ZK applications, Layer 2, EVM-native ZK applications, EVM-native applications, Scalable blockchain, Celestia, Lower gas costs">
+    <meta name="description" content="Manta Network is the modular blockchain for zero-knowledge (ZK) applications. Manta Pacific is a Layer 2 ecosystem empowering EVM-native ZK applications and general dApps with a scalable, cost-effective environment to deploy simply using Solidity. Manta Pacific leverages Celestia for data availability to lower gas costs for users across all applications in its ecosystem.">
+    <title>Manta Pacific</title>
+    <link rel="stylesheet" href="umi.css">
+    <link rel="stylesheet" type="text/css" href="layouts__index.chunk.css">
+    <link rel="stylesheet" type="text/css" href="p__index.chunk.css">
+    <script  src="e2def7a70466b4.6e38.js"></script>
+   
+        <link rel="stylesheet" href="bridge/css/0cf57996534a27d4.css" data-n-g="">
+    <link rel="preload" href="bridge/_next/static/css/dcc4f94b0e8c6c8f.css" as="style">
+    <link rel="stylesheet" href="bridge/css/dcc4f94b0e8c6c8f.css" data-n-p="">
+    <noscript data-n-css=""></noscript>
+
+  </head>
+  <body>
+    <div id="root">
+      <header class="py-4 bg-colorOne shadow">
+                <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="flex items-center justify-between">
+                        <div class="flex-shrink-0 flex"><span class="inline-flex lg:hidden mr-4"><button class="text-colorFive" type="button"><span aria-hidden="true" class="visible"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></span>
+                            <span
+                            aria-hidden="true" class="hidden">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                                </svg>
+                                </span>
+                                </button>
+                                </span><span class="inline-flex mr-1"><a href="https://pacific.manta.network/" rel="noopener noreferrer" target="_blank"><img alt="Manta Logo" class="hidden md:inline lg:h-8" src="bridge/images/manta-pacific-logo.svg"></a></span></div>
+                        <nav
+                        class="lg:flex lg:items-center lg:justify-end lg:space-x-6">
+                            <button class="justify-center gap-x-1.5 px-3 py-2 text-sm sm:text-base font-medium rounded-xl hover:bg-colorTwo focus:outline-none items-center hidden lg:inline-flex">Buy Crypto</button>
+                            <button class="inline-flex justify-center gap-x-1.5 px-3 py-2 text-sm sm:text-base font-medium rounded-xl hover:bg-colorTwo focus:outline-none items-center">Ecosystem</button>
+                            <div class="relative inline-block text-left" data-headlessui-state="">
+                                <div class="-ml-3 mr-0">
+                                    <button class="inline-flex w-full justify-center gap-x-1.5 px-3 py-2 text-sm sm:text-base font-medium rounded-xl hover:bg-colorTwo focus:outline-none items-center" id="headlessui-menu-button-:R2skm:" type="button" aria-haspopup="menu"
+                                    aria-expanded="false" data-headlessui-state="">Mainnet
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="-mr-1 h-5 w-5">
+                                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="hidden mr-3 lg:flex">
+                                <a class="flex items-center p-3 -m-3 mr-0.5 -ml-2.5s text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-colorFive" href="https://mantanetwork.medium.com/"
+                                rel="noopener noreferrer" target="_blank"><img alt="icon" src="bridge/images/medium-icon.svg"></a>
+                                <a class="flex items-center p-3 -m-3 mr-0.5 -ml-2.5s text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-colorFive"
+                                href="https://twitter.com/MantaNetwork" rel="noopener noreferrer" target="_blank"><img alt="icon" src="bridge/images/twitter-icon.svg"></a>
+                                <a class="flex items-center p-3 -m-3 mr-0.5 -ml-2.5s text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-colorFive"
+                                href="https://discord.com/invite/mantanetwork" rel="noopener noreferrer" target="_blank"><img alt="icon" src="bridge/images/discord-icon.svg"></a>
+                            </div></nav>
+                    </div>
+                    <nav class="hidden">
+                        <div class="px-1 py-8">
+                            <div class="grid gap-y-7"><a class="flex items-center p-3 -m-3 text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-1 focus:ring-colorFive focus:ring-offset-2" href="https://openc.pro/widget-page/?widgetId=c0JsNEZ2RUU"
+                                rel="noopener noreferrer" target="_blank" title="">Buy Crypto</a>
+                                <a class="flex items-center p-3 -m-3 text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-1 focus:ring-colorFive focus:ring-offset-2"
+                                href="https://mantanetwork.medium.com/" rel="noopener noreferrer" target="_blank" title=""><img alt="icon" class="mr-3" src="bridge/images/medium-icon.svg">Medium</a>
+                                <a class="flex items-center p-3 -m-3 text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-1 focus:ring-colorFive focus:ring-offset-2"
+                                href="https://twitter.com/MantaNetwork" rel="noopener noreferrer" target="_blank" title=""><img alt="icon" class="mr-3" src="bridge/images/twitter-icon.svg">Twitter</a>
+                                <a class="flex items-center p-3 -m-3 text-base font-medium text-colorFive transition-all duration-200 rounded-xl hover:bg-colorTwo focus:outline-none font-pj focus:ring-1 focus:ring-colorFive focus:ring-offset-2"
+                                href="https://discord.com/invite/mantanetwork" rel="noopener noreferrer" target="_blank" title=""><img alt="icon" class="mr-3" src="bridge/images/discord-icon.svg">Discord</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+      <main style="min-height: 100vh;">
+        <div>
+          <a class="w-ful px-4 py-3 flex items-center justify-center top-banner" href="bridge" rel="noreferrer" >New Paradigm is live! Bridge ETH or USDC to earn PENTA yield and Manta Token Rewards <svg class="ml-3" fill="none" height="21" viewBox="0 0 20 21" width="20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 0.5C4.49 0.5 0 4.99 0 10.5C0 16.01 4.49 20.5 10 20.5C15.51 20.5 20 16.01 20 10.5C20 4.99 15.51 0.5 10 0.5ZM12.79 11.03L9.26 14.56C9.11 14.71 8.92 14.78 8.73 14.78C8.54 14.78 8.35 14.71 8.2 14.56C7.91 14.27 7.91 13.79 8.2 13.5L11.2 10.5L8.2 7.5C7.91 7.21 7.91 6.73 8.2 6.44C8.49 6.15 8.97 6.15 9.26 6.44L12.79 9.97C13.09 10.26 13.09 10.74 12.79 11.03Z" fill="white"></path>
+            </svg>
+          </a>
+          <div class="section1___pY9aR">
+            <div class="content___ozyRP">
+              <div class="title___uX_HZ">Manta Pacific</div>
+              <div class="subTitle___wiuYi">The first EVM-native modular execution layer for wide ZK applications adoption, with Manta’s universal circuit and zk interface.</div>
+              <div class="buttonGroup___f_kYU">
+                <a  class=" connectButton button___uHNdF button___iod5_" role="button" href="#">Start Building <img class="icon___llY1_" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+                </a>
+                <a  class="button___uHNdF button___iod5_" role="button"href="bridge">Bridge <img class="icon___llY1_" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+                </a>
+                <a  class="connectButton interact-button button___uHNdF button___iod5_" role="button" href="#">Apply Grant <img class="icon___llY1_" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="section2___Wx6Oa">
+            <div class="content___E8Ct_">
+              <div class="title___YrBPs">Making ZK accessible to everyone</div>
+              <div class="intros___DwIBV">
+                <div class="introItem___QOAaK">
+                  <div class="label___v8RSL">Lower Cost</div>
+                  <div class="subLabel___FphjM">80% cheaper than other L2s</div>
+                  <div class="desc___QHk6J">Manta Pacific offers exceptional scalability and lower transaction costs through Celestia and Caldera's OP Stack Rollup solution.</div>
+                </div>
+                <div class="introItem___QOAaK">
+                  <div class="label___v8RSL">Deploying ZK Applications</div>
+                  <div class="subLabel___FphjM">Never Easier</div>
+                  <div class="desc___QHk6J">Manta Pacific uses universal circuits, allowing developers to easily create various zkApps without needing advanced cryptography knowledge or learning new zkDSLs.</div>
+                </div>
+                <div class="introItem___QOAaK">
+                  <div class="label___v8RSL">Proven User Base</div>
+                  <div class="subLabel___FphjM">Features to Over 1.5m Web3 Users</div>
+                  <div class="desc___QHk6J">Manta has established a significant user base in the ZK space, with over 300,000 zkSBTs minted on NPO sites and over 200,000 wallet installations.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section3___kbtmY">
+            <div class="content___BxOEH">
+              <div class="counters___neOL9">
+                <div class="counter___CXoaC">
+                  <div class="total___vuVzZ">0.0400 Gwei</div>
+                  <div class="label___crjxW">Gas tracker</div>
+                </div>
+                <div class="counter___CXoaC">
+                  <div class="total___vuVzZ">$1570.84M</div>
+                  <div class="label___crjxW">Total Value Locked</div>
+                </div>
+                <div class="counter___CXoaC">
+                  <div class="total___vuVzZ">10323942 </div>
+                  <div class="label___crjxW">Total transactions</div>
+                </div>
+              </div>
+              <a href="#" class="more___M2XnR" target="_blank">Explore More <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+              </a>
+            </div>
+          </div>
+          <div class="section4___qLFoJ">
+            <div class="content___YP8Tj">
+              <div class="left___QLxU1">
+                <div class="title___SdfEE">Get Started</div>
+                <div class="desc___jpI5x">Add chain to Metamask to get started with sending transactions, deploying your app, interacting with the ecosystem and more.</div>
+                <a class="connectButton button___uHNdF button___hl915" href="#" >Add Chain &amp; Request Test Tokens <img class="icon___llY1_" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+                </a>
+              </div>
+              <div class="right___IqJ6_">
+                <img src="static/cover-01.e64e56fb.png" class="cover___VS0cE">
+              </div>
+            </div>
+          </div>
+          <div class="section5___xZEHy">
+            <div class="content___LIqKk">
+              <div class="left___NA3nL"></div>
+              <div class="right___m1pij">
+                <div class="title___zQRx5">Bridge to Manta Pacific </div>
+                <div class="desc___TWBuM">Bridge funds from Ethereum to Manta Pacific to <br> start explore the Manta Pacific ecosystem. </div>
+                <a class="button___uHNdF button___Cfu06" href="bridge" >Bridge <img class="icon___llY1_" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="section6___SkXOT">
+            <div class="content___a2vC5">
+              <div class="left___zjGFy">
+                <div class="title___Is0mD">Start Building</div>
+                <div class="desc___opBjV">Read the official Manta documentation to build your first contracts and dapps.</div>
+                <a class="connectButton button___uHNdF button___D9z1C" href="#" >View Docs <img class="icon___llY1_" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDEyQzAgNS4zNzMgNS4zNzMgMCAxMiAwYzYuNjI4IDAgMTIgNS4zNzMgMTIgMTJzLTUuMzczIDEyLTEyIDEyUzAgMTguNjI4IDAgMTJabTEyLjUyMyAxMC4zNjZhMTAuMzYyIDEwLjM2MiAwIDEgMC0uOTctMjAuNzAxIDEwLjM2MiAxMC4zNjIgMCAwIDAgLjk3IDIwLjcwMVpNMTQuOTIyIDExLjJsLTMuNzUzLTMuNzUzIDEuMTMyLTEuMTMxTDE3Ljk4NSAxMiAxMi4zIDE3LjY4NGwtMS4xMzItMS4xMzEgMy43NTMtMy43NTNINS41OTR2LTEuNmg5LjMyOFoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=">
+                </a>
+              </div>
+              <div class="right___JPqb5">
+                <img src="static/cover-02.bc96bd28.png" class="cover___ouvU8">
+              </div>
+            </div>
+          </div>
+          <div class="roadMap___pctWc">
+            <h1 class="title___nE44B">Roadmap</h1>
+            <div class="container___XOEW6">
+              <div class="cardContainer___hM4pL cardActive___TnOB6">
+                <div class="mantaPacific___PgIW_ mantaPacificActive___Iptoy">Chapter 1</div>
+                <div class="cardTitle___Ig8LJ"> Manta Pacific Alpha</div>
+                <div class="achieved___XSQju">Achieved</div>
+                <div class="cardContent___ZXcSI" style="padding-top: 45px;">Manta Pacific operates as an Optimistic Rollup on Ethereum, capitalizing on Manta Network’s Universal Circuits. This allows developers to craft ZK-enabled apps using just solidity and the Universal Circuits SDK. Unlike Starkware and Aztec, which use domain-specific languages for ZK, Manta Pacific ensures EVM compatibility by using the OP Stack Bedrock codebase. This paves the way for easy development of dApps with embedded ZK features.</div>
+              </div>
+              <div class="cardContainer___hM4pL cardActive___TnOB6">
+                <div class="mantaPacific___PgIW_ mantaPacificActive___Iptoy">Chapter 2</div>
+                <div class="cardTitle___Ig8LJ"> Manta Pacific Alpha II</div>
+                <div class="achieved___XSQju">Achieved</div>
+                <div class="cardContent___ZXcSI" style="padding-top: 45px;">Manta Pacific will achieve data scalability and reduce gas fees by incorporating Celestia’s modular DA. This approach is expected to be more economical than Ethereum's projected solutions to reduce gas costs and address blockspace issues.</div>
+              </div>
+              <div class="cardContainer___hM4pL">
+                <div class="mantaPacific___PgIW_">Chapter 3</div>
+                <div class="cardTitle___Ig8LJ"> Manta Pacific Beta</div>
+                <div class="cardContent___ZXcSI" style="padding-top: 45px;">In this chapter, the goal is to transition fully over to zkEVM by leveraging Polygon CDK. A multi-prover framework will be explored for a smooth transition. This framework will marry Polygon’s ZK prover with the existing OP Stack rollup, promoting benefits in various dimensions. The end goal is to fully integrate with zkEVM and Polygon's ZK prover, creating a network architecture that merges Manta’s Universal Circuits, Validium services, Celestia DA, and zkEVM with Polygon CDK.</div>
+              </div>
+              <div class="cardContainer___hM4pL">
+                <div class="mantaPacific___PgIW_">Chapter 4</div>
+                <div class="cardTitle___Ig8LJ">
+                  <div>
+                    <div class="cardTitle___Ig8LJ">Manta Pacific</div>
+                    <div class="cardTitle___Ig8LJ" style="line-height: 18px;">Mainnet Production I</div>
+                  </div>
+                </div>
+                <div class="cardContent___ZXcSI" style="padding-top: 29px;">For Manta Pacific Mainnet, Manta Pacific intends to upgrade the Universal Circuits for lower gas costs, expanded use cases, and enhanced user experience. This will be achieved through ZK proof aggregation, the addition of more ZK schemes, and collaboration with account abstraction projects. The aim is to ensure modularity, decentralization, high extensibility, and full EVM equivalence, while unlocking new possibilities with cutting-edge ZK technology.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer___OIcX_">
+        <div class="content___cPXzM">
+          <div class="manta___VvNaB">
+            <div class="iconsWrap___XOXiN">
+              <div class="logoWrap___z5MSq">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU5IiBoZWlnaHQ9IjQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTEuMTIgNDEuMjFBMjEuNDcyIDIxLjQ3MiAwIDAgMSAyLjUxNSAyNGMwLTExLjg1NyA5LjU4Ni0yMS40NzYgMjEuNDAyLTIxLjQ3NiA5Ljc1NSAwIDIwLjQwNyA1Ljg1IDIyLjk4IDE0LjgxQzQ0LjAxOCA3LjMyNSAzNC44MjIgMCAyMy45MTcgMCAxMC43MSAwIDAgMTAuNzQ4IDAgMjRzMTAuNzEgMjQgMjMuOTE3IDI0YzEzLjIwNiAwIDIzLjkxNi0xMC43NDggMjMuOTE2LTI0di0xLjI2NWgtMS40ODhjLS4xNTYgMC0uMzc3LS4wMDctLjY2My0uMDJhNDEuNDcgNDEuNDcgMCAwIDEtMi4yMjMtLjEzN2MtMS43OTMtLjE1Ni0zLjg0LS40NjMtNS4yMzEtMS4wMjQtMi4yNDMtLjktMy41MS0yLjA4Ny00Ljk1My0zLjQ4MmwtLjA4NC0uMDc4Yy0xLjQ1LTEuMzk2LTMuMDc0LTIuOTY4LTUuOTAxLTQuMjk4LTIuNzgyLTEuMzExLTUuODU2LTEuMTAyLTguMTExLS42MzNhMjAuMTc5IDIwLjE3OSAwIDAgMC0yLjgyNy44MDJjLS4zNTEuMTI0LS42My4yNDItLjgyNi4zMi0xLjEzNy40ODItMi4yNDIgMS4wNS0zLjM1MyAxLjU3OCAwIDAgMi4xOS42IDMuMjY5Ljk0LjAzOS4wMTIuMDk3LjAzMi4xODIuMDU4LjE2Mi4wNTIuMzk2LjEzNy42NzYuMjU0LjU3Mi4yMzUgMS4zMTkuNTggMi4wNiAxLjA2MyAxLjE3Ljc1IDIuMTM4IDEuNzAyIDIuNTM1IDIuODYzLTIuNDc3LjMyNi00LjgwMyAxLjQyMi02LjU0NSAyLjQ0NmEyNy41MjMgMjcuNTIzIDAgMCAwLTIuNTQ4IDEuNzA5Yy0uMzA1LjIzNC0uNTUyLjQzLS43MjEuNTY3YTUzMS42NCA1MzEuNjQgMCAwIDAtMi4zNzkgMi4wOTNzMi44ODYuMzA3IDQuMzEuNTk0Yy45NDguMTkgMi4yMjIuNTAyIDMuNTYuOTY1IDEuMzQuNDcgMi42OTEgMS4wODMgMy44MTYgMS44NzIgMS4xMjQuNzkgMS45NSAxLjY5NiAyLjM1MiAyLjc0IDEuMTgzIDMuMDM4LjAyIDUuOTkzLTIuMzEzIDcuNjU2LTIuMzA4IDEuNjQzLTUuODEgMi4wMzQtOS4zMTQtLjM3OWwuMDA3LjAwN1ptOC4xNjMgMy43NTdhOS43NDggOS43NDggMCAwIDAgMi42MTItMS4zMTdjMy4xNzItMi4yNjMgNC44NDItNi40MSAzLjE5OC0xMC42MzctLjY1LTEuNjYzLTEuODg1LTIuOTI4LTMuMjU2LTMuODkzLTEuMzc4LS45NjYtMi45NTctMS42Ny00LjQyNi0yLjE4NS0uOTYyLS4zNC0xLjg5OC0uNi0yLjcxLS43OTYuMjkyLS4xODkuNTk4LS4zODUuOTMtLjU4IDEuOTM2LTEuMTQyIDQuMzgtMi4xOTIgNi43Mi0yLjE5MiAzLjUyOCAwIDYuMTU0IDEuMDkgOC42NjMgMi4yNS4yMjcuMTA1LjQ1NS4yMTYuNjg5LjMyIDIuMjQyIDEuMDU2IDQuNTk0IDIuMTY1IDcuMzMgMi4xNjUgMi43MzcgMCA0LjcxOS0uNzUgNi4xNDItMS41MzItMS4yNjcgMTAuNjQzLTEwLjI5NCAxOC45LTIxLjI0NSAxOC45YTIxLjY1IDIxLjY1IDAgMCAxLTQuNjM0LS41MDNoLS4wMTNabTIzLjE2My0xOS45NDNjLS45NDMuMzItMi4wODcuNTU0LTMuNDE5LjU1NC0yLjE0NSAwLTMuOTktLjg2LTYuMzMtMS45NTYtLjIwOC0uMDk4LS40MTYtLjE5Ni0uNjMtLjI5NC0yLjM0Ny0xLjA4OS01LjA1Ny0yLjI0My04LjU4Ni0yLjQ1Mi0uNDc0LTIuMzQxLTIuMjQyLTMuOTQ2LTMuNzYzLTQuOTI0YTEwLjcgMTAuNyAwIDAgMC0uNTA3LS4zMTNjLjE1LS4wMzIuMzA2LS4wNzIuNDY4LS4xMDQgMi4wNC0uNDI0IDQuNDcyLS41MjggNi41MzIuNDUgMi40NDQgMS4xNTQgMy44MjggMi40ODUgNS4yNjQgMy44NjdsLjA1Mi4wNDZjMS40NzUgMS40MjIgMy4wNDIgMi45MTUgNS43NjUgNC4wMSAxLjUxNC42MDcgMy40NzcuOTMzIDUuMTU0IDEuMTE2WiIgZmlsbD0idXJsKCNhKSIvPjxwYXRoIGQ9Ik02My4zMTQgMTguODI5VjQuNjVoMi43MDRsMi4zNCA1LjY5MyAyLjMzOS01LjY5M0g3My40djE0LjE3OGgtMi4xMThWNy45M2wtMi45NDQgNy4wMjQtMi45NDQtNy4wMjRWMTguODNoLTIuMDhaTTc2LjYxMSAxOC44MjkgODEuMDUgNC42NWgyLjg2Nmw0LjQzOSAxNC4xNzhoLTIuNDYzbC0xLjAyNy0zLjQyNGgtNC44NjFsLTEuMDA4IDMuNDI0SDc2LjYxMVptMy45MzItNS4zMDloMy43OTVsLTEuODk3LTYuMy0xLjg5OCA2LjNaTTkxLjgyNSAxOC44MjlWNC42NWgyLjQ0NGw1LjEwOCA5LjkyLS4wMzktOS45MmgyLjA2MXYxNC4xNzhoLTIuMjQzbC01LjMxLTEwLjI0Ni4wNCAxMC4yNDZoLTIuMDZaTTEwOS41MjIgMTguODI5VjYuNzE4aC00LjM4VjQuNjUxaDExLjE3OXYyLjA2N2gtNC4zODF2MTIuMTFoLTIuNDI0LjAwNlpNMTE4Ljk5MiAxOC44MjlsNC40MzktMTQuMTc4aDIuODY2bDQuNDM5IDE0LjE3OGgtMi40NjRsLTEuMDI2LTMuNDI0aC00Ljg2MmwtMS4wMDcgMy40MjRoLTIuMzg1Wm0zLjkzMi01LjMwOWgzLjc5NWwtMS44OTgtNi4zLTEuODk3IDYuM1pNNjMuNTc0IDQzLjEyOVYyOC45NWgyLjQ0NGw1LjEwOCA5LjkyLS4wNC05LjkyaDIuMDYxdjE0LjE3OGgtMi4yNDJsLTUuMzEtMTAuMjQ2LjA0IDEwLjI0NmgtMi4wNjFaTTc4LjE4NCA0My4xMjlWMjguOTVoOS4yNDF2Mi4wNjdoLTYuODI0djMuOTUyaDQuNDJ2Mi4wMjJIODAuNnY0LjA3aDYuOTAydjIuMDY3aC05LjMyNi4wMDdaTTk1LjQgNDMuMTI5di0xMi4xMWgtNC4zOFYyOC45NWgxMS4xNzh2Mi4wNjdoLTQuMzh2MTIuMTFoLTIuNDI1LjAwN1pNMTA2LjY4MiA0My4xMjlsLTEuNjU3LTE0LjE3OGgyLjEzOGwuODkxIDkuMzU4IDEuODEzLTkuMzU4aDEuODEzbDEuODEzIDkuMjc0Ljg5MS05LjI3NGgyLjA2bC0xLjYzOCAxNC4xNzhoLTIuMTc3bC0xLjg3OC0xMC4wMDQtMS44OTggMTAuMDA0aC0yLjE3Ny4wMDZaTTEyNC44NiA0My4zNWE0LjgxMSA0LjgxMSAwIDAgMS0yLjc0Mi0uODQ3Yy0uODMyLS41NjgtMS41MDItMS4zOTYtMS45OTYtMi40NzgtLjUtMS4wOS0uNzQ3LTIuNDEzLS43NDctMy45NzkgMC0xLjU2NS4yNDctMi44OTUuNzQ3LTMuOTc4LjUwMS0xLjA5IDEuMTY0LTEuOTEgMS45OTYtMi40NzhhNC43NjMgNC43NjMgMCAwIDEgMi43NDItLjg0OGMuOTk1IDAgMS45MDQuMjg3IDIuNzM2Ljg0OC44MjYuNTY3IDEuNDk1IDEuMzk1IDEuOTk2IDIuNDc4LjUwNiAxLjA5Ljc1MyAyLjQxMy43NTMgMy45NzggMCAxLjU2Ni0uMjUzIDIuODk2LS43NTMgMy45NzktLjUwNyAxLjA4OS0xLjE3IDEuOTEtMS45OTYgMi40NzhhNC43MjggNC43MjggMCAwIDEtMi43MzYuODQ4Wm0wLTIuMTg0Yy41NjYgMCAxLjA3OS0uMTkgMS41NDctLjU4LjQ2MS0uMzg1LjgzMi0uOTYgMS4wOTgtMS43MjIuMjY3LS43NjMuNDAzLTEuNzAzLjQwMy0yLjgyNCAwLTEuMTIyLS4xMzYtMi4wNjEtLjQwMy0yLjgxOC0uMjY2LS43NTYtLjYzNy0xLjMzLTEuMDk4LTEuNzIxLS40NjEtLjM5Mi0uOTgxLS41ODctMS41NDctLjU4Ny0uNTY1IDAtMS4wNzkuMTk1LTEuNTQ3LjU4Ny0uNDYxLjM5LS44MzEuOTY1LTEuMDk4IDEuNzIxLS4yNjYuNzU3LS40MDMgMS42OTYtLjQwMyAyLjgxOCAwIDEuMTIxLjEzNyAyLjA2LjQwMyAyLjgyNC4yNjcuNzYzLjYzNyAxLjMzNyAxLjA5OCAxLjcyMS40NjIuMzg1Ljk4Mi41OCAxLjU0Ny41OFpNMTM0LjU5IDQzLjEyOVYyOC45NWg0LjgwMmMuOTQzIDAgMS43NjguMTc2IDIuNDcuNTM0YTQuMDY3IDQuMDY3IDAgMCAxIDEuNjU3IDEuNWMuMzk3LjY0LjU5OCAxLjM5LjU5OCAyLjIzNyAwIC45MzMtLjI0IDEuNzM1LS43MjggMi40MDctLjQ4Ny42NzgtMS4xNDQgMS4xNjctMS45NzUgMS40OGwzLjA4NyA2LjAxM2gtMi42MDdsLTIuODA3LTUuNjY3aC0yLjA4djUuNjY3aC0yLjQyNGwuMDA3LjAwN1ptMi40MjQtNy42MWgyLjE3N2MuNzU0IDAgMS4zNTItLjIxIDEuODA3LS42Mi40NDgtLjQxMS42NzYtLjk1My42NzYtMS42MyAwLS42OC0uMjI4LTEuMjQtLjY3Ni0xLjY1LS40NDktLjQxMi0xLjA1My0uNjItMS44MDctLjYyaC0yLjE3N3Y0LjUxOVpNMTQ4LjQ5MSA0My4xMjlWMjguOTVoMi40MjR2Ni4zMzlsNS4wNjMtNi4zNGgyLjc2MmwtNS42OTMgNi44NjggNS45NTMgNy4zMWgtMy4wNDhsLTUuMDQzLTYuNDgydjYuNDgzaC0yLjQyNS4wMDdaIiBmaWxsPSIjZmZmIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iLS40MjkiIHkxPSIyNC40NDQiIHgyPSI0OC4yNjIiIHkyPSIyMy41NTYiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjMjlDQ0I5Ii8+PHN0b3Agb2Zmc2V0PSIuNDkiIHN0b3AtY29sb3I9IiMwMDkxRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNGRjY2QjciLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48L3N2Zz4=" alt="Manta Network Logo">
+              </div>
+              <ul class="socialsWrap___qBjsR">
+                <li>
+                  <a href="https://discord.com/invite/mantanetwork" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTYuODYgNy44MzdBMTIuMDg2IDEyLjA4NiAwIDAgMCAxMy45NzEgN2E3LjU3IDcuNTcgMCAwIDAtLjM3LjcwOWMtMS4wNi0uMTUtMi4xMzktLjE1LTMuMTk5IDBBNy4yNzUgNy4yNzUgMCAwIDAgMTAuMDI5IDdjLTEgLjE2LTEuOTcyLjQ0Mi0yLjg5Ljg0LTEuNjMzIDIuMTg3LTIuMzcgNC44NC0yLjA3NiA3LjQ4MmExMS45MjMgMTEuOTIzIDAgMCAwIDMuNTQxIDEuNjc1Yy4yODctLjM2My41NC0uNzQ4Ljc1OC0xLjE1YTcuNzI2IDcuNzI2IDAgMCAxLTEuMTk0LS41MzdjLjEtLjA3LjE5OC0uMTQuMjkyLS4yMTRhOC43MzYgOC43MzYgMCAwIDAgMy41NC43NDUgOC43MzYgOC43MzYgMCAwIDAgMy41NDEtLjc0NWMuMDk1LjA3NC4xOTQuMTQ4LjI5My4yMTNhNy42OTUgNy42OTUgMCAwIDEtMS4yLjUzOGMuMjE3LjQwMy40NzEuNzkuNzU5IDEuMTUzYTExLjkxIDExLjkxIDAgMCAwIDMuNTQzLTEuNjc2Yy4yOTUtMi42NDQtLjQ0MS01LjI5OS0yLjA3Ny03LjQ4N1ptLTcuMTgzIDUuOThhMS40MDQgMS40MDQgMCAwIDEtLjkyMi0uNDIzIDEuMTk3IDEuMTk3IDAgMCAxLS4zMzYtLjg5OSAxLjE4OCAxLjE4OCAwIDAgMSAuMzMzLS45Yy4yMzYtLjI0OC41NjgtLjQuOTI1LS40MjEuMTc3LjAxLjM1LjA1Mi41MDkuMTI0LjE1OS4wNzIuMzAxLjE3Mi40MTguMjk1LjExNy4xMjMuMjA2LjI2Ni4yNjMuNDIxLjA1Ny4xNTUuMDguMzE5LjA2OC40ODIuMDIyLjMzLS4wOTcuNjUzLS4zMzMuOWExLjM5MyAxLjM5MyAwIDAgMS0uOTI1LjQyWm00LjY1IDBhMS40MDQgMS40MDQgMCAwIDEtLjkyMi0uNDIzIDEuMTk3IDEuMTk3IDAgMCAxLS4zMzYtLjg5OWMtLjAyMy0uMzI5LjA5Ny0uNjUzLjMzMy0uOS4yMzYtLjI0OC41NjgtLjQuOTI1LS40MjIuMTc2LjAxLjM1LjA1Mi41MDkuMTI0LjE1OS4wNzIuMy4xNzIuNDE4LjI5NS4xMTcuMTIzLjIwNi4yNjYuMjYzLjQyMS4wNTcuMTU1LjA4LjMyLjA2OC40ODIuMDIyLjMzLS4wOTguNjU0LS4zMzMuOTAxYTEuMzkzIDEuMzkzIDAgMCAxLS45MjYuNDJaIiBmaWxsPSIjMDAwIi8+PC9zdmc+" alt="Discord Icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.t.me/mantanetworkofficial" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJtMTcuOTYgOC4wMDEtMi4xMTMgOS4zMzVjLS4xNi42NTktLjU3NS44MjMtMS4xNjUuNTEzbC0zLjIyLTIuMjIzLTEuNTUzIDEuNGMtLjE3Mi4xNjEtLjMxNS4yOTYtLjY0Ny4yOTZsLjIzMi0zLjA3MkwxNS40NiA5LjJjLjI2LS4yMTctLjA1Ny0uMzM4LS40MDMtLjEyTDcuNjggMTMuNDNsLTMuMTc1LS45M2MtLjY5LS4yMDMtLjcwMy0uNjQ4LjE0NC0uOTU4bDEyLjQyLTQuNDgzYy41NzUtLjIwMiAxLjA3OC4xMTkuODkuOTQyWiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==" alt="Telegram Icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/mantanetwork" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTguOTc1IDguMTkxYy0uNDc4LjE5OS0uOTkuMzM1LTEuNTMuMzk3LjU1MS0uMzEyLjk3Mi0uODA3IDEuMTczLTEuMzk2YTUuNzU0IDUuNzU0IDAgMCAxLTEuNjk1LjYwN0EyLjcyNyAyLjcyNyAwIDAgMCAxNC45NzggN2MtMS40NzMgMC0yLjY2NiAxLjEzLTIuNjY2IDIuNTIgMCAuMjAxLjAyNi4zOTMuMDcuNTc2LTIuMjE2LS4wOTgtNC4xOC0xLjEwNi01LjQ5My0yLjYyNy0uMjMuMzctLjM2Mi44LS4zNjIgMS4yNyAwIC44NzcuNDcyIDEuNjQ1IDEuMTg1IDIuMDk4YTIuNzYzIDIuNzYzIDAgMCAxLTEuMjA2LS4zMTR2LjAzYzAgMS4yMjMuOTE4IDIuMjQyIDIuMTM3IDIuNDc1YTIuODYgMi44NiAwIDAgMS0xLjE5OC4wNDRjLjM0MyAxIDEuMzI1IDEuNzMgMi40OTUgMS43NTJBNS41NDUgNS41NDUgMCAwIDEgNi42MzUgMTUuOWMtLjIxMiAwLS40MjMtLjAxLS42MzUtLjAzM0E3Ljg5NSA3Ljg5NSAwIDAgMCAxMC4wOTUgMTdjNC45MDIgMCA3LjU4LTMuODQzIDcuNTgtNy4xNyAwLS4xMDcgMC0uMjE1LS4wMDgtLjMyMy41MjMtLjM1My45NzUtLjggMS4zMzMtMS4zMDZsLS4wMjUtLjAxWiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==" alt="Twitter Icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/manta-network" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTIgNWMtMy44NjcgMC03IDMuMjE1LTcgNy4xNzcgMCAzLjE3MyAyLjAwNiA1Ljg2MiA0Ljc4NSA2LjgxLjM1Mi4wNjguNDc5LS4xNTQuNDc5LS4zNDYgMC0uMTctLjAwNS0uNjIxLS4wMDctMS4yMi0xLjk0OC40MzMtMi4zNTktLjk2NC0yLjM1OS0uOTY0LS4zMTktLjgyNy0uNzgtMS4wNS0uNzgtMS4wNS0uNjMzLS40NDMuMDUxLS40MzQuMDUxLS40MzQuNzAyLjA1IDEuMDcxLjczOCAxLjA3MS43MzguNjI1IDEuMDk4IDEuNjM4Ljc4IDIuMDQuNTk2LjA2LS40NjIuMjQzLS43OC40NDItLjk1OC0xLjU1NC0uMTgtMy4xODgtLjc5Ni0zLjE4OC0zLjU0NiAwLS43ODYuMjcxLTEuNDI1LjcyLTEuOTI4LS4wNzgtLjE4LS4zMTUtLjkxLjA2MS0xLjkgMCAwIC41ODYtLjE5IDEuOTI1LjczN2E2LjU5OCA2LjU5OCAwIDAgMSAxLjc1LS4yNDNjLjU5NS4wMDQgMS4xOS4wODQgMS43NS4yNDMgMS4zMzItLjkyOCAxLjkxNy0uNzM2IDEuOTE3LS43MzYuMzc2Ljk4OC4xMzkgMS43MTkuMDcgMS45YTIuODMgMi44MyAwIDAgMSAuNzE2IDEuOTI3YzAgMi43NTYtMS42MzYgMy4zNjQtMy4xOTIgMy41NC4yNDMuMjE0LjQ3MS42NTYuNDcxIDEuMzI2IDAgLjk2LS4wMDkgMS43MzQtLjAwOSAxLjk2NyAwIC4xODcuMTIzLjQxMS40ODMuMzM5IDIuOC0uOTM5IDQuODA0LTMuNjMgNC44MDQtNi43OThDMTkgOC4yMTUgMTUuODY3IDUgMTIgNVoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=" alt="GitHub Icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@MantaNetwork" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTcuNzUgOS4yOTNhMS41MDMgMS41MDMgMCAwIDAtMS4wNDYtMS4wNDNDMTUuNzY4IDggMTIuMDA2IDggMTIuMDA2IDhzLTMuNzU2LS4wMDYtNC43MDEuMjVjLS41MDYuMTQtLjkwMi41MzctMS4wNDMgMS4wNDMtLjE3OC45Ni0uMjY2IDEuOTMtLjI2MiAyLjkwNi0uMDAyLjk2OS4wODYgMS45MzguMjYyIDIuODkxLjE0LjUwNi41MzcuOTAzIDEuMDQzIDEuMDQ2LjkzNi4yNSA0LjcuMjUgNC43LjI1czMuNzU0IDAgNC42OTktLjI1YTEuNTEgMS41MSAwIDAgMCAxLjA0Ni0xLjA0NmMuMTcyLS45NTMuMjU2LTEuOTIyLjI1LTIuODkxYTE1LjcxOCAxNS43MTggMCAwIDAtLjI1LTIuOTA2Wm0tNi45NDYgNC43MDF2LTMuNTk5bDMuMTMyIDEuODA0LTMuMTMyIDEuNzk1WiIgZmlsbD0iIzAwMCIvPjwvc3ZnPg==" alt="YouTube Icon">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://mantanetwork.medium.com/" target="_blank">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTAiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTIuOTc4IDEyLjQxNWE0LjMyNiA0LjMyNiAwIDAgMS00LjMyNCA0LjMyNyA0LjMyNiA0LjMyNiAwIDAgMS00LjMyNC00LjMyNyA0LjMyNiA0LjMyNiAwIDAgMSA0LjMyNC00LjMyOCA0LjMyNiA0LjMyNiAwIDAgMSA0LjMyNCA0LjMyOFpNMTcuNzIxIDEyLjQxNWMwIDIuMjUtLjk2OCA0LjA3NC0yLjE2MiA0LjA3NHMtMi4xNjItMS44MjUtMi4xNjItNC4wNzRjMC0yLjI1Ljk2OC00LjA3NCAyLjE2Mi00LjA3NHMyLjE2MiAxLjgyMyAyLjE2MiA0LjA3NE0xOS42NjEgMTIuNDE1YzAgMi4wMTUtLjM0IDMuNjUtLjc2IDMuNjVzLS43Ni0xLjYzNS0uNzYtMy42NWMwLTIuMDE2LjM0LTMuNjUuNzYtMy42NXMuNzYgMS42MzQuNzYgMy42NVoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=" alt="Medium Icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyrightWrap___jOi0k">Made with love by <a href="javascript:void(0)">p0x labs</a>. <br> 2023 Manta Network. All rights reserved. </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div><div class="ant-menu-submenu ant-menu-submenu-hidden ant-menu-submenu-popup ant-menu ant-menu-light css-nllxry ant-menu-submenu-placement-bottomRight" style="--arrow-x: 190.984375px; --arrow-y: 0px; inset: 53.5px auto auto 193.016px; box-sizing: border-box; min-width: 24px; pointer-events: none;"><ul class="ant-menu ant-menu-sub ant-menu-vertical" role="menu" id="rc-menu-uuid-31596-1-rc-menu-more-popup" data-menu-list="true"></ul></div></div>
+   
+    
+   
+  </body>
+</html>
